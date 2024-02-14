@@ -1,0 +1,15 @@
+{{ $src := printf "images/%s" (.Get "src") }}
+{{ $resource := resources.Get $src }}
+<p>Debug: Trying to get {{ $src }}</p>
+{{ if $resource }}
+  <p>Image found: {{ $src }}</p>
+  {{ $resized := $resource.Resize (.Get "width") }}
+  {{ if $resized }}
+    <p>Image resized successfully: {{ $resized.RelPermalink }}</p>
+    <img src="{{ $resized.RelPermalink }}" alt="{{ .Get "alt" }}">
+  {{ else }}
+    <p>Failed to resize image: {{ $src }}</p>
+  {{ end }}
+{{ else }}
+  <p>Image not found: {{ $src }}</p>
+{{ end }}
