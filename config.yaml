@@ -1,5 +1,5 @@
 # exampleSite/config.yaml
-baseURL: https://japerre.github.io/personal-website/ # Replace with your domain
+baseURL: https://japerre.github.io/ # Replace with your domain
 languageCode: en-us
 theme: smigle
 # themesDir: /themes # Only needed for running the example site
