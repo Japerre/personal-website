@@ -1,7 +1,6 @@
 ---
 title: "Encodings Confuse Me"
 date: 2024-02-13
-draft: true
 categories:
   - Technical
 tags:
