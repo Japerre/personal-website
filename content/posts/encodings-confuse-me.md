@@ -16,7 +16,7 @@ And so I did...
 
 When you open a .torrent file in an editor such as notepad, this is what you are presented with. 
 
-![](/img/encodings%20confuse%20me%20endlessly/Asian_characters.jpg)
+![](/img/encodings-confuse-me/Asian_characters.jpg)
 
 What???
 
@@ -26,18 +26,18 @@ There must be something wrong with this file. How could a computer ever read thi
 
 Huh.. The file is UTF-16 LE encoded? But I thought these files were bencoded. 
 
-![](/img/encodings%20confuse%20me%20endlessly/i-am-confusion.jpg)
+![](/img/encodings-confuse-me/i-am-confusion.jpg)
 
 Well no, the file is neither UTF-16 LE encoded or bencoded. Let me explain...
 
 Basically all files on a computer are stored as a series of bits. There is no exception to this. Thus a .torrent file is also stored in only one's and zero's. Then why doesn't notepad show that? Is it possible to just see the bits of the file like this? 
 
-![](/img/encodings%20confuse%20me%20endlessly/binary.jpg)
+![](/img/encodings-confuse-me/binary.jpg)
 
 Yes it is, but no one does that. We use hex encoding for that. (there it is again, that word. **encoding**... 🤨)
 Let's visualize our .torrent file with a hexdump tool. This is possible with a plugin in Notepad++.
 
-![](/img/encodings%20confuse%20me%20endlessly/hexdump.jpg)
+![](/img/encodings-confuse-me/hexdump.jpg)
 
 What you see here are the first 160 bytes of the file (16 bytes per row x 10 rows). Hexadecimal is a great way to represent binary, because every hexadecimal character represents a nibble (4 bits) and 2 characters represent a byte (8 bits). You could say that hexadecimal is an encoding of binary, to make binary more easily readible. 
 
@@ -55,7 +55,7 @@ UTF-16 and Big5 doesn't really seem quite right huh? They still output legible t
 
 Remember those weird Chinese characters in my .torrent file? Well that was because our program assumed the file was encoded with the UTF-16 contract. However the specifications for .torrent files tell us that it is encoded in UTF-8. Let's try that. 
 
-![](/img/encodings%20confuse%20me%20endlessly/right_encoded.jpg)
+![](/img/encodings-confuse-me/right_encoded.jpg)
 
 That looks better! 
 
@@ -76,13 +76,13 @@ No?
 
 To me either, but it is. You just don't know the rules man... 😉
 
-![](/img/encodings%20confuse%20me%20endlessly/rickroll.jpg)
+![](/img/encodings-confuse-me/rickroll.jpg)
 
 Just like we decoded binary giberish into legible text using UTF-8, we can decode this giberisch text into a dictionary following the rules of bencoding. That is exactly what I have done in this [Python script](https://github.com/Japerre/.torrent-file-decoder). 
 
 Using the rules of bencoding, we can decode our .torrent file and write it out into a json file.
 
-![](/img/encodings%20confuse%20me%20endlessly/json.jpg)
+![](/img/encodings-confuse-me/json.jpg)
 
 
 ## Conclusion
