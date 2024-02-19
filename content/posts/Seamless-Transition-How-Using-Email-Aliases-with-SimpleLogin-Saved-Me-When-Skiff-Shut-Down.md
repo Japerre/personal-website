@@ -1,9 +1,9 @@
 ---
 title: "Seamless Transition: How Using Email Aliases With SimpleLogin Saved Me When Skiff Shut Down"
 date: 2024-02-19
-draft: true
+# draft: true
 categories:
-  - uncategorized
+  - Tech I Use 
 ---
 
 The news recently broke that Skiff is joining Notion and that their email services will come to a halt in 6 months. This practically means that every online account using skiff has to have its email updated in 6 months time. This is mildly annoying to do for one or two websites, but people usually have hundreds of accounts and changing email for every one of them is a very time consuming task. What's worse, is that people often don't know exactly to which sites they're signed up with their email account. They will surely think about their Facebook, Twitter and Youtube account, but what about that obscure crypto exchange you forgot you had an account for? This leaves a big doubt in the back of people's heads: "Did I update all of my accounts?"
