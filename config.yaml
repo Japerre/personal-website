@@ -48,6 +48,8 @@ params:
   social:
     - name: GitHub
       url: https://github.com/Japerre
-    - name: LinkedIN
+    - name: LinkedIn
       url: https://www.linkedin.com/in/tibo-laperre-b97525252/
+    - name: email
+      url: tibo.laperre@protonmail.com
   subtitle: "another Belgian on the internet"
