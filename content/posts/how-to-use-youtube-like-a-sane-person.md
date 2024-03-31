@@ -1,7 +1,7 @@
 ---
 title: "How to Use Youtube Like a Sane Person"
 date: 2024-03-31
-draft: true
+draft: False
 categories:
   - tech-i-use
 ---
