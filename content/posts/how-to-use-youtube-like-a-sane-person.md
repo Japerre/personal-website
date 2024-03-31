@@ -3,7 +3,7 @@ title: "How to Use Youtube Like a Sane Person"
 date: 2024-03-31
 draft: False
 categories:
-  - tech-i-use
+  - Tech I Use 
 ---
 
 Transitioning to [FreeTube](https://freetubeapp.io/), an open-source desktop client for YouTube, has significantly transformed my approach to content consumption on the platform. Available on GitHub, FreeTube offers a comprehensive YouTube browsing experience, mirroring almost all functionalities except for the ability to post comments — though reading them is still an option. Switching to FreeTube has fostered a more intentional and mindful engagement with content. The absence of algorithm-driven recommendations means I'm no longer passively consuming whatever is served up by YouTube's algorithms. Instead, I actively choose what to watch by keeping up with channels I've consciously decided to follow. 
