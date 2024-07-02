@@ -53,3 +53,8 @@ params:
     - name: email
       url: contact@japerre.xyz
   subtitle: "another Belgian on the internet"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
